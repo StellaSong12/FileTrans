@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".udp.UdpActivity">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/bt_udp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="udp test"/>
+
+            <Button
+                android:id="@+id/bt_socket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="socket test"
+                android:layout_below="@+id/bt_udp"
+                android:layout_marginTop="20dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".udp.UdpActivity">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_receive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#999999"/>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/bt_local_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Local IP" />
+
+            <TextView
+                android:id="@+id/tv_local_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_local_ip"
+                android:text="local ip:"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/bt_launch_dir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_local_ip"
+                android:text="chose file" />
+
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_local_ip"
+                android:layout_toEndOf="@+id/bt_launch_dir"
+                android:layout_marginStart="20dp"
+                android:text="send" />
+
+            <TextView
+                android:id="@+id/tv_file_path"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_launch_dir"
+                android:text="file path:"
+                android:layout_marginBottom="20dp"
+                android:maxWidth="300dp"/>
+
+            <Button
+                android:id="@+id/bt_md5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_file_path"
+                android:text="md5" />
+
+            <TextView
+                android:id="@+id/tv_md5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bt_md5"
+                android:text="md5:"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/bt_nsd_server"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start nsd server"
+                android:layout_below="@+id/tv_md5" />
+
+            <Button
+                android:id="@+id/bt_nsd_consumer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="start nsd consumer"
+                android:layout_below="@+id/bt_nsd_server" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
